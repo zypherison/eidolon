@@ -1,7 +1,5 @@
 node_modules
 .env
-data/stats.json
-badge.svg
 ARCHITECTURE.md
 BUILD_PROMPT.md
 PRD.md
