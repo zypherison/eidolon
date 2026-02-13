@@ -1,0 +1,14 @@
+{
+  "name": "eidolon",
+  "version": "0.1.0",
+  "description": "Evolving digital identity engine powered by GitHub activity.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "update": "node src/updateStats.js",
+    "badge": "node src/generateBadge.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

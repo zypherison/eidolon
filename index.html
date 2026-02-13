@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eidolon | Digital Identity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-dim: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+            
+            --type-arcane: #8a2be2;
+            --type-volt: #ffd700;
+            --type-lumina: #f0ffff;
+            --type-iron: #708090;
+            --type-aether: #00ffff;
+            --type-draconis: #ff4500;
+            --type-ember: #ff8c00;
+            --type-frost: #add8e6;
+            --type-neutral: #808080;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .avatar-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .avatar-glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: var(--accent);
+            filter: blur(20px);
+            opacity: 0.3;
+            animation: pulse 4s infinite ease-in-out;
+        }
+
+        .avatar {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            z-index: 1;
+        }
+
+        .stage-tag {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--text-dim) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-family: 'JetBrains+Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .badge-section {
+            text-align: center;
+            margin-top: 2rem;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .badge-section img {
+            max-width: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 4px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.1); }
+        }
+
+        .loading #dashboard { display: none; }
+        .loaded #loading { display: none; }
+    </style>
+</head>
+<body class="loading">
+    <div id="loading">Initialising Eidolon...</div>
+
+    <div id="dashboard" class="container">
+        <div class="hero">
+            <div class="avatar-container">
+                <div class="avatar-glow" id="glow"></div>
+                <div class="avatar" id="stage-icon">🥚</div>
+            </div>
+            <div class="stage-tag" id="stage">Egg</div>
+            <h1 id="username">@zypherison</h1>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Level</div>
+                <div class="stat-value" id="level">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Experience</div>
+                <div class="stat-value" id="exp">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Commits</div>
+                <div class="stat-value" id="totalCommits">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Repositories</div>
+                <div class="stat-value" id="totalRepos">0</div>
+            </div>
+        </div>
+
+        <div class="badge-section">
+            <p class="stat-label" style="margin-bottom: 1rem">Live Identity Badge</p>
+            <a href="badge.svg" target="_blank">
+                <img src="badge.svg" alt="Eidolon Badge">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const STAGE_ICONS = {
+            'Egg': '🥚',
+            'Awakened': '✨',
+            'Ascendant': '⚔️',
+            'Transcendent': '🪐'
+        };
+
+        const TYPE_COLORS = {
+            'Arcane': '#8a2be2',
+            'Volt': '#ffd700',
+            'Lumina': '#f0ffff',
+            'Iron': '#708090',
+            'Aether': '#00ffff',
+            'Draconis': '#ff4500',
+            'Ember': '#ff8c00',
+            'Frost': '#add8e6',
+            'Neutral': '#808080'
+        };
+
+        async function init() {
+            try {
+                const response = await fetch('data/stats.json');
+                const stats = await response.json();
+
+                document.getElementById('username').textContent = `@${stats.username}`;
+                document.getElementById('stage').textContent = stats.stage;
+                document.getElementById('level').textContent = stats.level;
+                document.getElementById('exp').textContent = stats.exp.toLocaleString();
+                document.getElementById('totalCommits').textContent = stats.totalCommits.toLocaleString();
+                document.getElementById('totalRepos').textContent = stats.totalRepos;
+                
+                document.getElementById('stage-icon').textContent = STAGE_ICONS[stats.stage] || '✨';
+                
+                const primaryColor = TYPE_COLORS[stats.primaryType] || TYPE_COLORS['Neutral'];
+                document.getElementById('glow').style.background = primaryColor;
+                document.documentElement.style.setProperty('--accent', primaryColor);
+
+                document.body.className = 'loaded';
+            } catch (error) {
+                console.error('Failed to load stats:', error);
+                document.getElementById('loading').textContent = 'Failed to load Eidolon data.';
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>
