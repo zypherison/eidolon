@@ -46,6 +46,7 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "auto: update eidolon stats, creature, and badge"
-            git pull --rebase
+            # -Xtheirs forces our local generated changes to win during the rebase
+            git pull --rebase -Xtheirs
             git push
           fi
