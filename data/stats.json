@@ -1,11 +1,11 @@
 {
   "username": "zypherison",
-  "primaryType": "Arcane",
-  "secondaryType": "Volt",
+  "primaryType": "Volt",
+  "secondaryType": "Arcane",
   "stage": "Ascendant",
-  "level": 13,
-  "exp": 195,
-  "totalCommits": 21,
+  "level": 14,
+  "exp": 215,
+  "totalCommits": 25,
   "totalRepos": 6,
-  "updatedAt": "2026-02-13T08:18:15.921Z"
+  "updatedAt": "2026-02-13T09:20:00.413Z"
 }

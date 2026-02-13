@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <defs>
+        <radialGradient id="auraGradient">
+            <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.4620689655172414" />
+            <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
+        </radialGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+    </defs>
+
+    <!-- Aura Layer -->
+    <circle cx="200" cy="200" r="132.75862068965517" fill="url(#auraGradient)">
+        <animate attributeName="r" values="132.75862068965517;149.31034482758622;132.75862068965517" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <line x1="200" y1="200" x2="133.89200610607446" y2="226.44188237097927" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="133.89200610607446" cy="226.44188237097927" r="4.4" fill="#C4B5FD" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="154.42378189071198" y2="145.2985526438778" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="154.42378189071198" cy="145.2985526438778" r="4.4" fill="#C4B5FD" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="237.94034202370707" y2="139.75076392912416" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="237.94034202370707" cy="139.75076392912416" r="4.4" fill="#C4B5FD" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="269.02463902473494" y2="217.46537166810475" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="269.02463902473494" cy="217.46537166810475" r="4.4" fill="#C4B5FD" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="204.71923095477152" y2="271.04342938791405" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="204.71923095477152" cy="271.04342938791405" r="4.4" fill="#C4B5FD" filter="url(#glow)" />
+    <!-- Core Structure -->
+    <polygon points="258.7888651760295,200 229.39443258801475,250.91265070209988 170.60556741198525,250.91265070209988 141.2111348239705,200 170.60556741198522,149.08734929790012 229.39443258801475,149.08734929790012" fill="#F59E0B" stroke="#C4B5FD" stroke-width="2" />
+</svg>
