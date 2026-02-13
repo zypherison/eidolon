@@ -31,6 +31,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Evolve Creature
+        run: npm run evolve
+
       - name: Generate Badge
         run: npm run badge
 
@@ -38,10 +41,10 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/stats.json badge.svg
+          git add data/stats.json data/creature.json public/creature.svg badge.svg
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "auto: update eidolon stats and badge"
+            git commit -m "auto: update eidolon stats, creature, and badge"
             git push
           fi
