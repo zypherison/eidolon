@@ -1,116 +1,107 @@
-# 🌌 Eidolon
+# 🌌 Eidolon v2
 
-> **An evolving digital identity engine powered by your GitHub activity.**
+> **A GitHub-native digital identity system that evolves a procedural creature based on your real GitHub activity.**
 
-Eidolon is a GitHub-native identity system that transforms your coding journey into a mythic evolution. By analyzing your repositories, commits, and language proficiency, it calculates experience (EXP), determines your power level, and evolves your digital persona through distinct mythic stages.
+Eidolon is composed of two independent engines: a **Stats Engine** that collects your coding data, and an **Evolution Engine** that procedurally generates a unique, evolving creature. Your creature's form, aura, and complexity are directly tied to your EXP, Level, and Programming Languages.
 
 ---
 
 ## 🚀 Live Status
 
+<p align="center">
+  <img src="public/creature.svg" width="300" height="300" alt="Your Eidolon Creature" />
+</p>
+
 ![Eidolon Badge](badge.svg)
 
-*This badge is automatically generated and updated daily to reflect the latest state of your Eidolon.*
+*Your creature and badge evolve daily based on your GitHub contributions.*
 
 ---
 
 ## ✨ Features
 
-- **Automated Evolution:** Powered by GitHub Actions, your Eidolon updates daily based on your latest activity.
-- **DNA Analysis:** Analyzes your language distribution to assign primary and secondary mythic types.
-- **Experience Engine:** Tracks total commits and repositories to calculate your level and evolution stage.
-- **Dynamic Badge:** Generates a custom SVG badge that can be embedded in your GitHub profile.
-- **Web Dashboard:** A sleek, static dashboard hosted on GitHub Pages for a deep dive into your stats.
+- **Stats Engine:** Automatically aggregates commits, repositories, and language usage.
+- **Evolution Engine:** Uses a seeded, deterministic algorithm to generate a unique creature for every user.
+- **Procedural Graphics:** Renders a layer-based SVG creature that changes form as you level up.
+- **Mythic Types:** Maps your top programming languages to elemental types (e.g., Python → Arcane, Rust → Iron).
+- **Fully Automated:** Runs entirely on GitHub Actions with no external servers or databases.
 
 ---
 
 ## 🧬 Evolution Mechanics
 
-### The EXP Formula
-Your growth is determined by your tangible contributions:
-`EXP = (total_commits * 5) + (total_repos * 15)`
-
-### Level Progression
-`Level = floor(sqrt(EXP))`
+### The Core Loop
+1. **Activity:** You push code to GitHub.
+2. **Stats:** The system calculates your EXP and determines your primary/secondary types.
+3. **Evolution:** The engine generates a new creature form based on your current stats.
+4. **Publication:** Your profile badge and creature SVG are updated automatically.
 
 ### Evolution Stages
+Your creature evolves through distinct forms as you gain levels:
+
 | Level Range | Stage          | Description                                  |
 | :---------- | :------------- | :------------------------------------------- |
-| 0           | **Egg**        | The potential of a new identity.             |
-| 1 – 10      | **Awakened**   | The first spark of digital consciousness.    |
-| 11 – 25     | **Ascendant**  | Rising through the ranks of the code-sphere. |
-| 26+         | **Transcendent**| A master of the digital realm.               |
+| 0           | **Egg**        | The dormant potential of a new identity.     |
+| 1 – 10      | **Awakened**   | A simple, geometric lifeform emerges.        |
+| 11 – 25     | **Ascendant**  | A complex, multi-limbed entity takes shape.  |
+| 26+         | **Transcendent**| A being of pure energy and complexity.       |
+
+### Mythic Types (Language DNA)
+Your primary and secondary types determine your creature's color palette and mutations:
+
+| Language   | Type       | Color Theme |
+| :--------- | :--------- | :---------- |
+| Python     | **Arcane** | 🟣 Purple   |
+| JavaScript | **Volt**   | 🟡 Yellow   |
+| TypeScript | **Lumina** | 🟢 Green    |
+| Rust       | **Iron**   | 🔘 Gray     |
+| Go         | **Aether** | 🔵 Blue     |
+| C++        | **Draconis**| 🔴 Red      |
 
 ---
 
-## 💠 Mythic Types (Language DNA)
-
-Eidolon maps your most used programming languages to mythic types:
-
-| Language   | Type       | Language   | Type       |
-| :--------- | :--------- | :--------- | :--------- |
-| Python     | **Arcane** | Go         | **Aether** |
-| JavaScript | **Volt**   | C++        | **Draconis**|
-| TypeScript | **Lumina** | Java       | **Ember**  |
-| Rust       | **Iron**   | C#         | **Frost**  |
-
-**Type Rules:**
-- **Single Type:** Assigned if one language covers >60% of your total bytes.
-- **Dual Type:** Assigned if your top two languages are within 20% of each other.
-- **Neutral:** Default type if no recognized languages are found.
-
----
-
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Architecture
 
 - **Runtime:** Node.js 20
-- **Logic:** JavaScript (ES Modules)
-- **Automation:** GitHub Actions (Daily Cron)
-- **API:** GitHub REST API v3
-- **Presentation:** Static HTML/CSS (GitHub Pages)
+- **Languages:** JavaScript (ES Modules)
+- **CI/CD:** GitHub Actions (Daily Cron)
+- **Data:** JSON (Stateless, Git-backed persistence)
+
+### Project Structure
+- `scripts/`: Data fetching and orchestration logic.
+- `engine/`: The core Evolution Engine and SVG Renderer.
+- `data/`: JSON storage for stats and creature parameters.
+- `public/`: Generated assets (dashboard, SVGs).
 
 ---
 
-## 🏗️ Architecture
+## ⚙️ Setup & Development
 
-Eidolon operates on a deterministic, stateless loop:
-
-1. **Aggregation:** Fetches repository and commit data via the GitHub API.
-2. **Evolution:** Processes raw data through the experience and type resolution engines.
-3. **Synthesis:** Updates `data/stats.json` and generates a fresh `badge.svg`.
-4. **Publication:** Commits changes automatically and serves the dashboard via GitHub Pages.
-
----
-
-## ⚙️ Setup & Automation
-
-### GitHub Actions
-The system is designed to run entirely within the GitHub ecosystem.
-- **Workflow:** `.github/workflows/update-eidolon.yml`
-- **Secrets:** Requires a `GITHUB_TOKEN` with repository access.
-
-### Local Development
 To run the engine locally:
 
 ```bash
-# Install dependencies
+# 1. Install dependencies
 npm install
 
-# Update stats and fetch GitHub data
+# 2. update Data (Fetch latest GitHub stats)
+# Requires GITHUB_TOKEN in .env or environment
 npm run update
 
-# Generate the mythic badge
+# 3. Evolve Creature (Generate new form based on stats)
+npm run evolve
+
+# 4. Generate Badge
 npm run badge
 ```
 
 ---
 
-## 🗺️ Roadmap (v0.1 MVP)
-- [x] Core EXP & Level Engine
-- [x] Language-to-Type Mapping
+## 🗺️ Roadmap (v2)
+- [x] Stats Engine (EXP, Level, Type Calculation)
+- [x] Evolution Engine (Seeded Variation & Morphologies)
+- [x] Procedural SVG Renderer
 - [x] Automated GitHub Action Workflow
-- [x] Dynamic SVG Badge Generation
-- [x] Static Dashboard Implementation
+- [x] Static Dashboard Integration
 
 ---
 

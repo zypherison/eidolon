@@ -5,8 +5,9 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "update": "node src/updateStats.js",
-    "badge": "node src/generateBadge.js"
+    "update": "node scripts/updateStats.js",
+    "evolve": "node scripts/runEvolution.js",
+    "badge": "node scripts/generateBadge.js"
   },
   "dependencies": {
     "node-fetch": "^3.3.2"
