@@ -1,15 +1,15 @@
 {
   "username": "zypherison",
   "form": "ascendant",
-  "primaryType": "Volt",
-  "secondaryType": "Arcane",
+  "primaryType": "Arcane",
+  "secondaryType": "Volt",
   "complexity": 0.3,
-  "auraIntensity": 0,
+  "auraIntensity": 0.4838709677419355,
   "mutationIndex": 0.3276156084379181,
   "appendageCount": 5,
   "geometryVariation": 0.8788865176029503,
-  "primaryColor": "#F59E0B",
-  "secondaryColor": "#C4B5FD",
+  "primaryColor": "#8B5CF6",
+  "secondaryColor": "#FDE68A",
   "seed": "9a10902",
-  "updatedAt": "2026-03-02T02:42:00.105Z"
+  "updatedAt": "2026-03-03T02:44:33.230Z"
 }
