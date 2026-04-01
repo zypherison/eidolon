@@ -4,12 +4,12 @@
   "primaryType": "Neutral",
   "secondaryType": null,
   "complexity": 0.34,
-  "auraIntensity": 0.02857142857142857,
+  "auraIntensity": 0.3142857142857143,
   "mutationIndex": 0.027615608437918125,
   "appendageCount": 5,
   "geometryVariation": 0.8788865176029503,
   "primaryColor": "#6B7280",
   "secondaryColor": "#E5E7EB",
   "seed": "9a10902",
-  "updatedAt": "2026-03-31T02:55:48.704Z"
+  "updatedAt": "2026-04-01T03:26:38.128Z"
 }
