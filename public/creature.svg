@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
     <defs>
         <radialGradient id="auraGradient">
-            <stop offset="0%" stop-color="#6B7280" stop-opacity="0.32571428571428573" />
+            <stop offset="0%" stop-color="#6B7280" stop-opacity="0.5542857142857143" />
             <stop offset="100%" stop-color="#6B7280" stop-opacity="0" />
         </radialGradient>
         <filter id="glow">
@@ -11,8 +11,8 @@
     </defs>
 
     <!-- Aura Layer -->
-    <circle cx="200" cy="200" r="115.71428571428571" fill="url(#auraGradient)">
-        <animate attributeName="r" values="115.71428571428571;128.85714285714286;115.71428571428571" dur="4s" repeatCount="indefinite" />
+    <circle cx="200" cy="200" r="144.28571428571428" fill="url(#auraGradient)">
+        <animate attributeName="r" values="144.28571428571428;163.14285714285714;144.28571428571428" dur="4s" repeatCount="indefinite" />
     </circle>
     <line x1="200" y1="200" x2="131.66364676133543" y2="227.33318177674263" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
     <circle cx="131.66364676133543" cy="227.33318177674263" r="4.7" fill="#E5E7EB" filter="url(#glow)" />
