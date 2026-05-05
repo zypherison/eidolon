@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
     <defs>
         <radialGradient id="auraGradient">
-            <stop offset="0%" stop-color="#6B7280" stop-opacity="0.5542857142857143" />
+            <stop offset="0%" stop-color="#6B7280" stop-opacity="0.21081081081081082" />
             <stop offset="100%" stop-color="#6B7280" stop-opacity="0" />
         </radialGradient>
         <filter id="glow">
@@ -11,19 +11,19 @@
     </defs>
 
     <!-- Aura Layer -->
-    <circle cx="200" cy="200" r="144.28571428571428" fill="url(#auraGradient)">
-        <animate attributeName="r" values="144.28571428571428;163.14285714285714;144.28571428571428" dur="4s" repeatCount="indefinite" />
+    <circle cx="200" cy="200" r="101.35135135135135" fill="url(#auraGradient)">
+        <animate attributeName="r" values="101.35135135135135;111.62162162162163;101.35135135135135" dur="4s" repeatCount="indefinite" />
     </circle>
-    <line x1="200" y1="200" x2="131.66364676133543" y2="227.33318177674263" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="131.66364676133543" cy="227.33318177674263" r="4.7" fill="#E5E7EB" filter="url(#glow)" />
-    <line x1="200" y1="200" x2="152.88750487579216" y2="143.4546836318737" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="152.88750487579216" cy="143.4546836318737" r="4.7" fill="#E5E7EB" filter="url(#glow)" />
-    <line x1="200" y1="200" x2="239.21922995709048" y2="137.71989080313958" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="239.21922995709048" cy="137.71989080313958" r="4.7" fill="#E5E7EB" filter="url(#glow)" />
-    <line x1="200" y1="200" x2="271.35131225028783" y2="218.05409206141164" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="271.35131225028783" cy="218.05409206141164" r="4.7" fill="#E5E7EB" filter="url(#glow)" />
-    <line x1="200" y1="200" x2="204.87830615549416" y2="273.4381517268325" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="204.87830615549416" cy="273.4381517268325" r="4.7" fill="#E5E7EB" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="130.92086031308907" y2="227.63028157866376" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="130.92086031308907" cy="227.63028157866376" r="4.8" fill="#E5E7EB" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="152.37541253748554" y2="142.8400606278723" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="152.37541253748554" cy="142.8400606278723" r="4.8" fill="#E5E7EB" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="239.64552593488492" y2="137.04293309447803" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="239.64552593488492" cy="137.04293309447803" r="4.8" fill="#E5E7EB" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="272.1268699921388" y2="218.25033219251395" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="272.1268699921388" cy="218.25033219251395" r="4.8" fill="#E5E7EB" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="204.9313312224017" y2="274.236392506472" stroke="#E5E7EB" stroke-width="2.1380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="204.9313312224017" cy="274.236392506472" r="4.8" fill="#E5E7EB" filter="url(#glow)" />
     <!-- Core Structure -->
     <polygon points="258.7888651760295,200 229.39443258801475,250.91265070209988 170.60556741198525,250.91265070209988 141.2111348239705,200 170.60556741198522,149.08734929790012 229.39443258801475,149.08734929790012" fill="#6B7280" stroke="#E5E7EB" stroke-width="2" />
 </svg>
