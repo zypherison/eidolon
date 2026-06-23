@@ -2,14 +2,14 @@
   "username": "zypherison",
   "form": "ascendant",
   "primaryType": "Neutral",
-  "secondaryType": "Frost",
-  "complexity": 0.38,
-  "auraIntensity": 0.48717948717948717,
+  "secondaryType": "Arcane",
+  "complexity": 0.42,
+  "auraIntensity": 0.9069767441860465,
   "mutationIndex": 0.3276156084379181,
   "appendageCount": 5,
   "geometryVariation": 0.8788865176029503,
   "primaryColor": "#6B7280",
-  "secondaryColor": "#CFFAFE",
+  "secondaryColor": "#C4B5FD",
   "seed": "9a10902",
-  "updatedAt": "2026-06-22T05:07:14.141Z"
+  "updatedAt": "2026-06-23T04:05:31.683Z"
 }

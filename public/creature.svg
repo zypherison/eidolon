@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
     <defs>
         <radialGradient id="auraGradient">
-            <stop offset="0%" stop-color="#6B7280" stop-opacity="0.3948717948717949" />
+            <stop offset="0%" stop-color="#6B7280" stop-opacity="0.5627906976744186" />
             <stop offset="100%" stop-color="#6B7280" stop-opacity="0" />
         </radialGradient>
         <filter id="glow">
@@ -11,19 +11,19 @@
     </defs>
 
     <!-- Aura Layer -->
-    <circle cx="200" cy="200" r="124.35897435897436" fill="url(#auraGradient)">
-        <animate attributeName="r" values="124.35897435897436;139.23076923076923;124.35897435897436" dur="4s" repeatCount="indefinite" />
+    <circle cx="200" cy="200" r="145.34883720930233" fill="url(#auraGradient)">
+        <animate attributeName="r" values="145.34883720930233;164.41860465116278;145.34883720930233" dur="4s" repeatCount="indefinite" />
     </circle>
-    <line x1="200" y1="200" x2="130.1780738648427" y2="227.92738138058485" stroke="#CFFAFE" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="130.1780738648427" cy="227.92738138058485" r="4.9" fill="#CFFAFE" filter="url(#glow)" />
-    <line x1="200" y1="200" x2="151.86332019917896" y2="142.22543762387096" stroke="#CFFAFE" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="151.86332019917896" cy="142.22543762387096" r="4.9" fill="#CFFAFE" filter="url(#glow)" />
-    <line x1="200" y1="200" x2="240.07182191267938" y2="136.3659753858165" stroke="#CFFAFE" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="240.07182191267938" cy="136.3659753858165" r="4.9" fill="#CFFAFE" filter="url(#glow)" />
-    <line x1="200" y1="200" x2="272.9024277339897" y2="218.44657232361624" stroke="#CFFAFE" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="272.9024277339897" cy="218.44657232361624" r="4.9" fill="#CFFAFE" filter="url(#glow)" />
-    <line x1="200" y1="200" x2="204.98435628930926" y2="275.03463328611144" stroke="#CFFAFE" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
-    <circle cx="204.98435628930926" cy="275.03463328611144" r="4.9" fill="#CFFAFE" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="128.69250096834998" y2="228.5215809844271" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="128.69250096834998" cy="228.5215809844271" r="5.1" fill="#C4B5FD" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="150.83913552256575" y2="140.9961916158682" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="150.83913552256575" cy="140.9961916158682" r="5.1" fill="#C4B5FD" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="240.92441386826832" y2="135.01205996849347" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="240.92441386826832" cy="135.01205996849347" r="5.1" fill="#C4B5FD" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="274.4535432176916" y2="218.83905258582084" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="274.4535432176916" cy="218.83905258582084" r="5.1" fill="#C4B5FD" filter="url(#glow)" />
+    <line x1="200" y1="200" x2="205.09040642312434" y2="276.6311148453904" stroke="#C4B5FD" stroke-width="3.6380780421895906" stroke-linecap="round" opacity="0.8" />
+    <circle cx="205.09040642312434" cy="276.6311148453904" r="5.1" fill="#C4B5FD" filter="url(#glow)" />
     <!-- Core Structure -->
-    <polygon points="258.7888651760295,200 229.39443258801475,250.91265070209988 170.60556741198525,250.91265070209988 141.2111348239705,200 170.60556741198522,149.08734929790012 229.39443258801475,149.08734929790012" fill="#6B7280" stroke="#CFFAFE" stroke-width="2" />
+    <polygon points="258.7888651760295,200 236.65425790010244,245.96298561318827 186.91824681479807,257.3149055856052 147.03306269708474,225.5075326410537 147.03306269708474,174.49246735894633 186.91824681479807,142.68509441439483 236.65425790010244,154.0370143868117" fill="#6B7280" stroke="#C4B5FD" stroke-width="2" />
 </svg>
