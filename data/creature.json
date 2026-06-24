@@ -3,13 +3,13 @@
   "form": "ascendant",
   "primaryType": "Neutral",
   "secondaryType": "Arcane",
-  "complexity": 0.42,
-  "auraIntensity": 0.9069767441860465,
+  "complexity": 0.44,
+  "auraIntensity": 0.35555555555555557,
   "mutationIndex": 0.3276156084379181,
   "appendageCount": 5,
   "geometryVariation": 0.8788865176029503,
   "primaryColor": "#6B7280",
   "secondaryColor": "#C4B5FD",
   "seed": "9a10902",
-  "updatedAt": "2026-06-23T04:05:31.683Z"
+  "updatedAt": "2026-06-24T04:08:37.343Z"
 }
