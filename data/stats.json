@@ -1,11 +1,11 @@
 {
   "username": "zypherison",
-  "primaryType": "Neutral",
-  "secondaryType": "Arcane",
+  "primaryType": "Arcane",
+  "secondaryType": "Neutral",
   "stage": "Ascendant",
-  "level": 23,
-  "exp": 540,
-  "totalCommits": 45,
-  "totalRepos": 21,
-  "updatedAt": "2026-07-08T03:26:27.219Z"
+  "level": 24,
+  "exp": 585,
+  "totalCommits": 48,
+  "totalRepos": 23,
+  "updatedAt": "2026-07-09T04:04:08.366Z"
 }
