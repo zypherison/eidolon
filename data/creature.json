@@ -4,12 +4,12 @@
   "primaryType": "Arcane",
   "secondaryType": "Neutral",
   "complexity": 0.48,
-  "auraIntensity": 0.1836734693877551,
+  "auraIntensity": 0.5918367346938775,
   "mutationIndex": 0.3276156084379181,
   "appendageCount": 5,
   "geometryVariation": 0.8788865176029503,
   "primaryColor": "#8B5CF6",
   "secondaryColor": "#E5E7EB",
   "seed": "9a10902",
-  "updatedAt": "2026-08-13T02:27:38.526Z"
+  "updatedAt": "2026-08-14T02:26:02.297Z"
 }
